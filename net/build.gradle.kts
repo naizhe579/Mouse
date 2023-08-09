@@ -6,8 +6,8 @@ plugins {
 
 val groupIdStr: String = "cn.naizhe579"
 val artifactIdStr: String = "net"
-val versionInt: Int = 2
-val versionStr: String = "${versionInt}.0"
+val versionInt: Int = 21
+val versionStr: String = "2.1"
 
 android {
     namespace = "cn.naizhe579.net"
@@ -25,6 +25,13 @@ android {
     }
 
     buildTypes {
+        debug {
+            isMinifyEnabled = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
         release {
             isMinifyEnabled = true
             proguardFiles(
@@ -44,6 +51,12 @@ android {
         singleVariant("release") {
             withSourcesJar()
             withJavadocJar()
+        }
+
+        multipleVariants {
+            withSourcesJar()
+            withJavadocJar()
+            allVariants()
         }
     }
 }
