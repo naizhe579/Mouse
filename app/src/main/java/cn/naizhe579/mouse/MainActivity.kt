@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         NetUtils.Instance.hi()
 
+        ///测试提交
+
         var type: NetCacheType = OnlyCache
 
         var listener: OnNetListener<String>
