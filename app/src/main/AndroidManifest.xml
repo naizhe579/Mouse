@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:icon="@mipmap/mouse"
+        android:icon="@mipmap/bbb"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/mouse"
+        android:roundIcon="@mipmap/bbb"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mouse"
         tools:targetApi="31">
